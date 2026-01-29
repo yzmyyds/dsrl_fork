@@ -175,8 +175,7 @@ def main(cfg: OmegaConf):
 	callbacks = [checkpoint_callback, logging_callback]
 	# Train the agent
 	model.learn(
-		# total_timesteps=20000000,
-		total_timesteps=2000000,
+		total_timesteps=20000000,
 		callback = callbacks
 	)
 
